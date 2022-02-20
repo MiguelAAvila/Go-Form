@@ -3,7 +3,7 @@
 
 ### Commands 
 
-##### Navigate to the quiz4_avila_miguel folder and run the following command: "go run ." without the quotes.
+##### Run the following command: "go run ." without the quotes.
 ##### Open a browser and type http://localhost:4000. If its working you see that it has "Welcome to quotebox!" in the page. 
 
 ##### To view the form navigate to http://localhost:4000/book/create. 
