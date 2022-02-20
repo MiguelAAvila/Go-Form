@@ -9,6 +9,6 @@
 ##### To view the form navigate to http://localhost:4000/book/create. 
 ##### Fill the form and submit it, and boom!! you have posted the information to the database. 
 
-### To view the database posted.
+### To view the data posted to the database.
 ##### Log into post sql with : psql --host=localhost --dbname=library --username=library, and enter 'admin' as password. 
 ##### Run the following command to view the data: "Select * FROM books"
