@@ -7,7 +7,21 @@ import (
 )
 
 func (app *application) home(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Welcome to quotebox!"))
+	ts, err := template.ParseFiles("./ui/html/home.page.tmpl")
+	if err != nil {
+		log.Println(err.Error())
+		http.Error(w,
+			http.StatusText(http.StatusInternalServerError),
+			http.StatusInternalServerError)
+		return
+	}
+	err = ts.Execute(w, nil)
+	if err != nil {
+		log.Panicln(err.Error())
+		http.Error(w,
+			http.StatusText(http.StatusInternalServerError),
+			http.StatusInternalServerError)
+	}
 }
 
 func (app *application) createBookForm(w http.ResponseWriter, r *http.Request) {

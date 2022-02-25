@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Book Form</title>
+  <title>Home Page</title>
   <link rel="stylesheet" href="../style.css" />
   <style>
     body {
@@ -226,10 +226,10 @@
 
 <body>
  <nav>
-      <a href="http://localhost:4000/book/create"
+      <a href="http://localhost:4000/book/create" id="active"
         ><i class="fa fa-caret-right" aria-hidden="true"></i> Add Book</a
       >
-      <a href="http://localhost:4000"  id="active"
+      <a href="http://localhost:4000" 
         ><i class="fa fa-caret-right" aria-hidden="true"></i> Home</a
       >
   </nav>
@@ -237,23 +237,9 @@
   <div class="wrapper">
     <div class="container">
       <nav style="text-align: center;">
-        <a id="active"> Book Form </a>
+        <a id="active"> Home </a>
       </nav>
-      <form action="/book-add" id="bookform" method="POST">
-        <label for="fbname">Book Name</label>
-        <input type="text" id="bname" name="book_name" placeholder="Book name.." />
-
-        <label for="aname">Author Name</label>
-        <input type="text" id="aname" name="author_name" placeholder="Author name.." />
-
-        <label for="isbn">ISBN</label>
-        <input type="text" id="isbn" name="isbn" placeholder="1123456789011" />
-
-        <label for="description">Description</label>
-        <textarea id="descrip" name="description" placeholder="Brief description of the book.." style="height: 200px" form="bookform"></textarea>
-
-        <input type="submit" value="Submit" />
-      </form>
+      <h1 style="text-align: center"> Home Page </h1>
     </div>
   </div>
   <!-- /wrapper -->
